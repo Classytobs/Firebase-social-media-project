@@ -23,6 +23,11 @@ export default function Main() {
 
 
   return (
+    <div className='flex flex-col justify-center items-center content-center mb-8'>
+      <div className='text-4xl'>
+        <h1>Welcome to the home page</h1>
+      </div>
     <div>{postList?.map((post) => <Post post={post}/>) }</div>
+    </div>
   )
 }
