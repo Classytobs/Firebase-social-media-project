@@ -19,9 +19,9 @@ const navigate = useNavigate();
 }
 
   return (
-    <div>
+    <div className='flex flex-col gap-y-5 text-2xl items-center mt-12'>
         <h1>Sign in with Google to continue</h1>
-        <button onClick={handleSignIn}>Sign in with Google</button>
+        <button onClick={handleSignIn}  className='shadow-md  text-sm h-fit px-2 py-2 rounded-lg bg-blue-50 hover:bg-blue-100 w-fit'>Sign in with Google</button>
     </div>
   )
 }

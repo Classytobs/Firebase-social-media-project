@@ -12,7 +12,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className='flex flex-row px-8 py-5 bg-slate-500 h-fit w-full text-2xl font-serif justify-end content-center items-center mb-5'>
+        <div className='flex flex-row px-8 py-5 bg-green-500 h-fit w-full text-2xl font-serif justify-end content-center items-center mb-5'>
             <div className='flex gap-x-5 mr-12'>
             <Link to="/">Home</Link>
             {!user?
@@ -24,7 +24,7 @@ export default function Navbar() {
             <div className='flex flex-row items-center justify-end gap-x-2'>{user &&(<>
             <p>{user?.displayName}</p>
             <img src={user?.photoURL  || ""} alt='' className='rounded-full h-8 w-8'/>
-            <button className='shadow-md text-sm h-fit px-2 py-2 rounded-lg bg-blue-900 hover:bg-blue-800'
+            <button className='shadow-md text-sm h-fit px-2 py-2 rounded-lg bg-blue-50 hover:bg-blue-100'
             onClick={signUserOut}>Sign out</button></>)}
             </div>
 
